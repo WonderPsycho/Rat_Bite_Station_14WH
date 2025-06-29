@@ -230,7 +230,7 @@
   - type: BlockWeather
   - type: SunShadowCast
   # Goobstation
-  - type: Penetratable
+  # - type: Penetratable
     penetrateDamage: 50
     damagePenalty: 0.1
   - type: ExaminableDamage
@@ -705,7 +705,7 @@
     # <Goobstation>
     - type: RustRequiresPathStage
       pathStage: 11 # Can't rust
-    - type: Penetratable
+    # - type: Penetratable
       penetrateDamage: 1000
       damagePenalty: 0.8
     - type: Fixtures
@@ -745,7 +745,7 @@
               acts: [ "Destruction" ]
     - type: RustRequiresPathStage # Goobstation
       pathStage: 10 # Ascension
-    - type: Penetratable # Goobstation - Better snipers
+  #  - type: Penetratable # Goobstation - Better snipers
       penetrateDamage: 200
       damagePenalty: 0.5
 
@@ -794,7 +794,7 @@
         acts: ["Destruction"]
   - type: RustRequiresPathStage # Goobstation
     pathStage: 10 # Ascension
-  - type: Penetratable # Goobstation - Better snipers
+  # - type: Penetratable # Goobstation - Better snipers
     penetrateDamage: 200
     damagePenalty: 0.5
 
@@ -848,7 +848,7 @@
         - WallLayer
   - type: RustRequiresPathStage # Goobstation
     pathStage: 11 # Can't rust
-  - type: Penetratable # Goobstation - Better snipers
+  # - type: Penetratable # Goobstation - Better snipers
     penetrateDamage: 1000
     damagePenalty: 0.8
 
@@ -924,7 +924,7 @@
         density: 2000 # double normal density
   - type: RustRequiresPathStage # Goobstation
     pathStage: 7 # Toxic blade
-  - type: Penetratable # Goobstation - Better snipers
+#  - type: Penetratable # Goobstation - Better snipers
     penetrateDamage: 100
     damagePenalty: 0.25
   - type: CosmicCorruptible # DeltaV - Cosmic Cult
@@ -1037,7 +1037,7 @@
     price: 150
   - type: RustRequiresPathStage # Goobstation
     pathStage: 10 # Ascension
-  - type: Penetratable # Goobstation - Better snipers
+#  - type: Penetratable # Goobstation - Better snipers
     penetrateDamage: 200
     damagePenalty: 0.5
 
@@ -1202,7 +1202,7 @@
     node: diagonalshuttleWall
   - type: RustRequiresPathStage # Goobstation
     pathStage: 7 # Toxic blade
-  - type: Penetratable # Goobstation - Better snipers
+#  - type: Penetratable # Goobstation - Better snipers
     penetrateDamage: 90
     damagePenalty: 0.3
 
@@ -1266,7 +1266,7 @@
   # <Goobstation>
   - type: RustRequiresPathStage
     pathStage: 7 # Toxic blade
-  - type: Penetratable
+#  - type: Penetratable
     penetrateDamage: 90
     damagePenalty: 0.3
   - type: Fixtures

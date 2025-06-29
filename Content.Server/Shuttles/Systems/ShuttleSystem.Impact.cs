@@ -44,62 +44,62 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using System.Numerics;
-using Content.Server.Shuttles.Components;
-using Content.Shared.Audio;
-using Robust.Shared.Audio;
-using Robust.Shared.Map;
-using Robust.Shared.Physics.Events;
+// using System.Numerics;
+// using Content.Server.Shuttles.Components;
+// using Content.Shared.Audio;
+// using Robust.Shared.Audio;
+// using Robust.Shared.Map;
+// using Robust.Shared.Physics.Events;
 
-namespace Content.Server.Shuttles.Systems;
+// namespace Content.Server.Shuttles.Systems;
 
-public sealed partial class ShuttleSystem
+// public sealed partial class ShuttleSystem
 {
     /// <summary>
     /// Minimum velocity difference between 2 bodies for a shuttle "impact" to occur.
     /// </summary>
-    private const int MinimumImpactVelocity = 10;
+  //  private const int MinimumImpactVelocity = 10;
 
-    private readonly SoundCollectionSpecifier _shuttleImpactSound = new("ShuttleImpactSound");
+  //  private readonly SoundCollectionSpecifier _shuttleImpactSound = new("ShuttleImpactSound");
 
-    private void InitializeImpact()
+  //  private void InitializeImpact()
     {
         // Goobstation - replaced by ShuttleImpactSystem.cs, yes i know this is cursed but 1984Toolbox doesn't let me have 2 subscriptions for one event+comp pair
         //SubscribeLocalEvent<ShuttleComponent, StartCollideEvent>(OnShuttleCollide);
     }
 
-    private void OnShuttleCollide(EntityUid uid, ShuttleComponent component, ref StartCollideEvent args)
+  //  private void OnShuttleCollide(EntityUid uid, ShuttleComponent component, ref StartCollideEvent args)
     {
-        if (!HasComp<ShuttleComponent>(args.OtherEntity))
-            return;
+  //      if (!HasComp<ShuttleComponent>(args.OtherEntity))
+  //          return;
 
-        var ourBody = args.OurBody;
-        var otherBody = args.OtherBody;
+  //      var ourBody = args.OurBody;
+  //      var otherBody = args.OtherBody;
 
         // TODO: Would also be nice to have a continuous sound for scraping.
-        var ourXform = Transform(uid);
+  //      var ourXform = Transform(uid);
 
-        if (ourXform.MapUid == null)
-            return;
+  //      if (ourXform.MapUid == null)
+  //          return;
 
-        var otherXform = Transform(args.OtherEntity);
+  //      var otherXform = Transform(args.OtherEntity);
 
-        var ourPoint = Vector2.Transform(args.WorldPoint, _transform.GetInvWorldMatrix(ourXform));
-        var otherPoint = Vector2.Transform(args.WorldPoint, _transform.GetInvWorldMatrix(otherXform));
+  //      var ourPoint = Vector2.Transform(args.WorldPoint, _transform.GetInvWorldMatrix(ourXform));
+  //      var otherPoint = Vector2.Transform(args.WorldPoint, _transform.GetInvWorldMatrix(otherXform));
 
-        var ourVelocity = _physics.GetLinearVelocity(uid, ourPoint, ourBody, ourXform);
-        var otherVelocity = _physics.GetLinearVelocity(args.OtherEntity, otherPoint, otherBody, otherXform);
-        var jungleDiff = (ourVelocity - otherVelocity).Length();
+  //      var ourVelocity = _physics.GetLinearVelocity(uid, ourPoint, ourBody, ourXform);
+  //      var otherVelocity = _physics.GetLinearVelocity(args.OtherEntity, otherPoint, otherBody, otherXform);
+  //      var jungleDiff = (ourVelocity - otherVelocity).Length();
 
-        if (jungleDiff < MinimumImpactVelocity)
+  //      if (jungleDiff < MinimumImpactVelocity)
         {
-            return;
+  //          return;
         }
 
-        var coordinates = new EntityCoordinates(ourXform.MapUid.Value, args.WorldPoint);
-        var volume = MathF.Min(10f, 1f * MathF.Pow(jungleDiff, 0.5f) - 5f);
-        var audioParams = AudioParams.Default.WithVariation(SharedContentAudioSystem.DefaultVariation).WithVolume(volume);
+  //      var coordinates = new EntityCoordinates(ourXform.MapUid.Value, args.WorldPoint);
+  //      var volume = MathF.Min(10f, 1f * MathF.Pow(jungleDiff, 0.5f) - 5f);
+  //      var audioParams = AudioParams.Default.WithVariation(SharedContentAudioSystem.DefaultVariation).WithVolume(volume);
 
-        _audio.PlayPvs(_shuttleImpactSound, coordinates, audioParams);
+  //      _audio.PlayPvs(_shuttleImpactSound, coordinates, audioParams);
     }
 }

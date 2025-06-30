@@ -47,7 +47,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35
+        Piercing: 40 #RATT
 
 - type: entity
   id: BulletMagnumPractice
@@ -69,8 +69,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 7
-        Heat: 7
+        Blunt: 8 #RATT
+        Heat: 8 #RATT
 
 - type: entity
   id: BulletMagnumAP
@@ -81,7 +81,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 28 # Goobstation edit
+        Piercing: 38 #RATT
       armorPenetration: 0.75 # Goobstation
 
 - type: entity
@@ -94,4 +94,4 @@
     damage:
       types:
         Radiation: 15
-        Piercing: 20
+        Piercing: 30 #RATT

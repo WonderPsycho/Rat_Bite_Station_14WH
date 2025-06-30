@@ -22,7 +22,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 19
+        Piercing: 26 #RATT
 
 - type: entity
   id: BulletMinigun
@@ -33,4 +33,4 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 5
+        Piercing: 7 #RATT

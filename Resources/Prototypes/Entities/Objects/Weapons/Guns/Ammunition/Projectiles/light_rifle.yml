@@ -40,7 +40,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 19
+        Piercing: 25 #RATT
       armorPenetration: 0.4 # Goobstation
 
 - type: entity
@@ -76,4 +76,4 @@
     damage:
       types:
         Radiation: 10
-        Piercing: 11
+        Piercing: 18 #RATT

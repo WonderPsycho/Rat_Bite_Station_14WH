@@ -40,7 +40,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 17
+        Piercing: 26
       armorPenetration: 0.15 # Goobstation
 
 - type: entity
@@ -75,5 +75,5 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 9
-        Piercing: 10
+        Radiation: 13
+        Piercing: 16

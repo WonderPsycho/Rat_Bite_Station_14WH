@@ -117,8 +117,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 40
-        Structural: 15
+        Piercing: 60 #RATT
+        Structural: 30 #RATTT
 
 
 - type: entity
@@ -149,8 +149,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
-        Structural: 15
+        Piercing: 12 #RATT
+        Structural: 18 #RATT
 
 
 - type: entity

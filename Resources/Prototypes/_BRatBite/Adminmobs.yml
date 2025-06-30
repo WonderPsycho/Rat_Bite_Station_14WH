@@ -2,6 +2,7 @@
   name: MonsterHamlet
   parent: MobHamster
   id: MobHamsterHamlet
+  size: Huge
   description: A grumpy, cute and fluffy monster of a hamster, Careful...
   components:
   - type: Sprite

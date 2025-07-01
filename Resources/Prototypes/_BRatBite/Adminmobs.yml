@@ -1,7 +1,7 @@
 - type: entity
   name: MonsterHamlet
   parent: MobHamster
-  id: MobHamsterHamlet
+  id: MobMonsterHammy
   size: Huge
   scale: 2.3
   description: A grumpy, cute and fluffy monster of a hamster, Careful...

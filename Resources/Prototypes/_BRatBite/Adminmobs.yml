@@ -3,6 +3,7 @@
   parent: MobHamster
   id: MobHamsterHamlet
   size: Huge
+  scale: 2.3
   description: A grumpy, cute and fluffy monster of a hamster, Careful...
   components:
   - type: Sprite

@@ -77,6 +77,7 @@
             CargoTechnician: [ 3, 5 ]
             SalvageSpecialist: [ 7, 7 ]
             Quartermaster: [ 1, 1 ]
+            Prisoner: [ -1, -1 ] #Ratbite
 
       # Blob Config - Huge
         - type: StationBlobConfig

@@ -133,6 +133,7 @@
   - Visitor
   - Zookeeper
   - ServiceWorker
+  - Prisoner # Ratbite
 
 - type: department
   id: CentralCommand

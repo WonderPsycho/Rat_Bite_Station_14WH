@@ -64,4 +64,11 @@ public interface IBanManager
     /// </summary>
     /// <param name="pSession">Player's session</param>
     public void SendRoleBans(ICommonSession pSession);
+    /// <summary>
+    /// Removes all role bans with a set description
+    /// </summary>
+    /// <param name="description">The description of the roleban to be pardoned.</param>
+    /// <param name="target">Target user, username or GUID, null for none</param>
+    /// <param name="unbanningAdmin">Unbanning admin</param>
+    public Task<string> PardonRoleBanByDescription(string description, NetUserId? target, NetUserId? unbanningAdmin);
 }

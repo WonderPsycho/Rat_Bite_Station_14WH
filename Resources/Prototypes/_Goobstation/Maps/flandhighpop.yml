@@ -98,6 +98,7 @@
             Clown: [ 2, 2 ]
             Mime: [ 2, 2 ]
             Musician: [ 3, 3 ]
+            Prisoner: [ -1, -1 ] #Ratbite
             #silicon
             StationAi: [ 1, 1 ]
             Borg: [ 4, 4 ]

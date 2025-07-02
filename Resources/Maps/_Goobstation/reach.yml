@@ -4,8 +4,8 @@ meta:
   engineVersion: 255.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/10/2025 18:05:18
-  entityCount: 2525
+  time: 06/20/2025 17:12:35
+  entityCount: 2527
 maps:
 - 1
 grids:
@@ -1277,6 +1277,10 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           immutable: True
           moles:
@@ -1296,6 +1300,10 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
@@ -1315,10 +1323,18 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
           - 6666.982
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -6272,6 +6288,10 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -11810,6 +11830,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -12241,7 +12265,7 @@ entities:
     - type: Transform
       pos: -2.5,-3.5
       parent: 2
-- proto: PosterLegitJustAWeekAway
+- proto: PosterLegitKSLeaders
   entities:
   - uid: 1707
     components:
@@ -14048,6 +14072,18 @@ entities:
     components:
     - type: Transform
       pos: 12.5,16.5
+      parent: 2
+- proto: SpawnPointPrisoner
+  entities:
+  - uid: 2526
+    components:
+    - type: Transform
+      pos: 18.5,4.5
+      parent: 2
+  - uid: 2527
+    components:
+    - type: Transform
+      pos: 18.5,3.5
       parent: 2
 - proto: SpawnPointSalvageSpecialist
   entities:

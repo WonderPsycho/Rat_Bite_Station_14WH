@@ -97,6 +97,7 @@
             Clown: [ 2, 2 ]
             Mime: [ 2, 2 ]
             Musician: [ 3, 3 ]
+            Prisoner: [ -1, -1 ] #Ratbite
 
         # Goobstation blob-config-start HUGE
         - type: StationBlobConfig

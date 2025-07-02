@@ -96,6 +96,7 @@
             Musician: [ 2, 2 ]
             Boxer: [ 1, 1 ]
             Reporter: [ 1, 1 ]
+            Prisoner: [ -1, -1 ] #Ratbite
 
         # Goobstation blob-config-start HUGE
         - type: StationBlobConfig

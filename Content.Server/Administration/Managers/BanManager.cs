@@ -365,4 +365,29 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
     {
         _sawmill = _logManager.GetSawmill(SawmillId);
     }
+ // <KS14>
+    public async Task<string> PardonRoleBanByDescription(string description, NetUserId? target, NetUserId? unbanningAdmin) // KS14 - used for imprisonment system - can go without stringent checking for errors
+    {
+        _playerManager.TryGetSessionById(target, out var session);
+        if (session == null) return "Error - cannot get target session.";
+        _cachedRoleBans.TryGetValue(session, out var roleBans);
+        if (roleBans != null)
+        {
+            // Iterate over role bans to unban those with the specific reason
+            foreach (var roleBan in roleBans.Where(rb => rb.Reason == description))
+            {
+                if (roleBan.Unban == null)
+                {
+                    int banId = roleBan.Id ?? 0; //evil hack
+                    await _db.AddServerRoleUnbanAsync(new ServerRoleUnbanDef(banId, unbanningAdmin, DateTimeOffset.Now));
+                }
+            }
+            roleBans.RemoveAll(roleBan => roleBan.Reason == description);
+            SendRoleBans(session);
+        }
+        return $"Pardoned all bans with description {description}";
+
+
+    }
+    // </KS14>
 }

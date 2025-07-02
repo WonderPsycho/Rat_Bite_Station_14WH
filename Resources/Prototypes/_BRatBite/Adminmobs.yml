@@ -19,7 +19,6 @@
     noMovementLayers:
       movement:
         state: hamster-0
-  - Devourer
   - type: GhostRole
     makeSentient: true
     allowSpeech: true
@@ -53,3 +52,15 @@
     flavors:
     - meaty
     - sadness
+  - type: Devourer
+    foodPreference: Humanoid
+    shouldStoreDevoured: true
+    chemical: Ichor
+    healRate: 7.5
+    whitelist:
+      components:
+      - MobState
+      - Door
+      - Item
+      tags:
+      - Wall

@@ -19,7 +19,7 @@
     noMovementLayers:
       movement:
         state: hamster-0
-           - Devourer
+  - Devourer
   - type: GhostRole
     makeSentient: true
     allowSpeech: true

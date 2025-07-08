@@ -13,7 +13,7 @@ public sealed partial class CCVars
     ///     The time you must spend reading the rules, before the "Request" button is enabled
     /// </summary>
     public static readonly CVarDef<float> GhostRoleTime =
-        CVarDef.Create("ghost.role_time", 3f, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("ghost.role_time", 1f, CVar.REPLICATED | CVar.SERVER); ///Ratbites, selfantag being allowed means the ghostrole rules mainly are nothingburger and metagrudging is covered already.
 
     /// <summary>
     ///     If ghost role lotteries should be made near-instanteous.

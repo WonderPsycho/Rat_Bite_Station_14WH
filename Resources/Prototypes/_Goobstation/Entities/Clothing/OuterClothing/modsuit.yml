@@ -47,8 +47,7 @@
       outerClothing:
       - state: equipped-OUTERCLOTHING-sealed
         shader: unshaded
-  - type: StaminaResistance
-    damageCoefficient: 0.9
+
   - type: Armor
     coverage:
     - Chest
@@ -122,7 +121,7 @@
     delayDelta: 2.5
     knockdownTimeDelta: -2.5
   - type: StaminaResistance
-    damageCoefficient: 0.7
+    damageCoefficient: 0.8 #Ratbite
   - type: Armor
     traumaDeductions:
       Dismemberment: 0.3
@@ -143,7 +142,7 @@
       coefficients:
         Blunt: 0.6
         Slash: 0.6
-        Piercing: 0.6
+        Piercing: 0.4 #Ratbite
         Heat: 0.6
         Radiation: 0.6
   - type: ComponentToggler
@@ -197,7 +196,7 @@
     delayDelta: 3
     knockdownTimeDelta: -3
   - type: StaminaResistance
-    damageCoefficient: 0.7
+    damageCoefficient: 0.8 #Ratbite
   - type: Armor
     traumaDeductions:
       Dismemberment: 0.3
@@ -218,7 +217,7 @@
       coefficients:
         Blunt: 0.5
         Slash: 0.5
-        Piercing: 0.45
+        Piercing: 0.35 #Ratbite
         Heat: 0.5
         Caustic: 0.5
         Radiation: 0.5
@@ -309,8 +308,6 @@
   - type: ModifyDelayedKnockdown
     delayDelta: 1
     knockdownTimeDelta: -1
-  - type: StaminaResistance
-    damageCoefficient: 0.9
   - type: FireProtection
     reduction: 0.5
   - type: HideClothingLayerClothing
@@ -385,8 +382,6 @@
   - type: ModifyDelayedKnockdown # Goobstation
     delayDelta: 1
     knockdownTimeDelta: -1
-  - type: StaminaResistance
-    damageCoefficient: 0.9
   - type: FireProtection
     reduction: 0.7
   - type: HideClothingLayerClothing
@@ -459,8 +454,6 @@
   - type: ModifyDelayedKnockdown # Goobstation
     delayDelta: 1
     knockdownTimeDelta: -1
-  - type: StaminaResistance
-    damageCoefficient: 0.9
   - type: FireProtection
     reduction: 0.75
   - type: HideClothingLayerClothing
@@ -519,7 +512,7 @@
       coefficients:
         Blunt: 0.55
         Slash: 0.75
-        Piercing: 0.85
+        Piercing: 0.45 #Ratbite
         Heat: 0.25
         Shock: 0.75
         Caustic: 0.25
@@ -536,7 +529,7 @@
     delayDelta: 3
     knockdownTimeDelta: -3
   - type: StaminaResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.8 #Ratbite
   - type: FireProtection
     reduction: 0.5
   - type: HideClothingLayerClothing
@@ -597,7 +590,7 @@
       coefficients:
         Blunt: 0.7
         Slash: 0.7
-        Piercing: 0.55
+        Piercing: 0.35 #Ratbite
         Heat: 0.5
         Radiation: 0.1
         Caustic: 0.5
@@ -613,7 +606,7 @@
     delayDelta: 3
     knockdownTimeDelta: -3
   - type: StaminaResistance
-    damageCoefficient: 0.6
+    damageCoefficient: 0.8
   - type: FireProtection
     reduction: 0.5
   - type: HideClothingLayerClothing

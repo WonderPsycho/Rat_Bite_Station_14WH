@@ -110,8 +110,8 @@
     modifiers:
       coefficients:
         Blunt: 0.7
-        Slash: 0.7
-        Piercing: 0.7
+        Slash: 0.4 #Ratbite
+        Piercing: 0.55 #Ratbite
         Heat: 0.8
         Caustic: 0.2
   - type: ZombificationResistance

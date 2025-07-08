@@ -72,7 +72,7 @@ public sealed partial class CCVars
     ///     Controls the maximum number of character slots a player is allowed to have.
     /// </summary>
     public static readonly CVarDef<int>
-        GameMaxCharacterSlots = CVarDef.Create("game.maxcharacterslots", 30, CVar.ARCHIVE | CVar.SERVERONLY);
+        GameMaxCharacterSlots = CVarDef.Create("game.maxcharacterslots", 50, CVar.ARCHIVE | CVar.SERVERONLY); ///Ratbites, more characters doesn't hurt.
 
     /// <summary>
     ///     Controls the game map prototype to load. SS14 stores these prototypes in Prototypes/Maps.
@@ -134,7 +134,7 @@ public sealed partial class CCVars
     ///     Whether or not disconnecting inside of a cryopod should remove the character or just store them until they reconnect.
     /// </summary>
     public static readonly CVarDef<bool>
-        GameCryoSleepRejoining = CVarDef.Create("game.cryo_sleep_rejoining", false, CVar.SERVER | CVar.REPLICATED);
+        GameCryoSleepRejoining = CVarDef.Create("game.cryo_sleep_rejoining", true, CVar.SERVER | CVar.REPLICATED); ///Ratbites, being able to safely go afk is nice.
 
     /// <summary>
     ///     When enabled, guests will be assigned permanent UIDs and will have their preferences stored.
@@ -357,7 +357,7 @@ public sealed partial class CCVars
     ///     Defaults to 2 minutes.
     /// </summary>
     public static readonly CVarDef<float> RoundRestartTime =
-        CVarDef.Create("game.round_restart_time", 120f, CVar.SERVERONLY);
+        CVarDef.Create("game.round_restart_time", 100f, CVar.SERVERONLY); ///Ratbites, roundend people tend to all be dead by 1m, this shortens restart by 20s.
 
     /// <summary>
     ///     The prototype to use for secret weights.

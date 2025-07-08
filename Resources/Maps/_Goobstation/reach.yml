@@ -12265,13 +12265,6 @@ entities:
     - type: Transform
       pos: -2.5,-3.5
       parent: 2
-- proto: PosterLegitKSLeaders
-  entities:
-  - uid: 1707
-    components:
-    - type: Transform
-      pos: 4.5,11.5
-      parent: 2
 - proto: PosterLegitNanomichiAd
   entities:
   - uid: 1708

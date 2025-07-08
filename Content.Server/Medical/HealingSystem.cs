@@ -32,7 +32,6 @@
 // SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 J <billsmith116@gmail.com>
 // SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
 // SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
@@ -248,7 +247,7 @@ public sealed class HealingSystem : EntitySystem
         if (targetedBodyPart == null
             || !TryComp(targetedBodyPart.Value.Id, out DamageableComponent? damageable))
         {
-            _popupSystem.PopupEntity(Loc.GetString("missing-body-part"), target, user, PopupType.MediumCaution);
+            _popupSystem.PopupEntity(Loc.GetString("does-not-exist-rebell"), target, user, PopupType.MediumCaution);
             return false;
         }
 
@@ -306,7 +305,6 @@ public sealed class HealingSystem : EntitySystem
             return;
 
         var healedBleed = false;
-        var canHeal = true;
         var healedTotal = FixedPoint2.Zero;
         FixedPoint2 modifiedBleedStopAbility = 0;
         // Heal some bleeds
@@ -329,6 +327,8 @@ public sealed class HealingSystem : EntitySystem
 
         healedBleed = healedBleedWound || healedBleedLevel;
 
+        /*
+
         if (TraumaSystem.TraumasBlockingHealing.Any(traumaType => _trauma.HasWoundableTrauma(targetedWoundable, traumaType, woundableComp, false)))
         {
             canHeal = false;
@@ -339,10 +339,17 @@ public sealed class HealingSystem : EntitySystem
                 return;
             }
         }
+        */
+        // KS14 - we do NOT need dogshit healing capabilities thank you very much
+        var damageChanged = _damageable.TryChangeDamage(ent, healing.Damage * _damageable.UniversalTopicalsHealModifier, true, origin: args.User);
 
-        if (canHeal)
+        if (damageChanged is not null)
+            healedTotal += -damageChanged.GetTotal();
+
+        if (healedTotal <= 0 && !healedBleed)
         {
-            var damageChanged = _damageable.TryChangeDamage(ent, healing.Damage * _damageable.UniversalTopicalsHealModifier, true, origin: args.User);
+            if (healing.BloodlossModifier == 0 && woundableComp.Bleeds > 0) // If the healing item has no bleeding heals, and its bleeding, we raise the alert.
+                _popupSystem.PopupEntity(Loc.GetString("medical-item-cant-use-rebell", ("target", ent)), ent, args.User);
 
             if (damageChanged is not null)
                 healedTotal += -damageChanged.GetTotal();
@@ -355,6 +362,7 @@ public sealed class HealingSystem : EntitySystem
                 return;
             }
         }
+
 
         // Re-verify that we can heal the damage.
         if (TryComp<StackComponent>(args.Used.Value, out var stackComp))

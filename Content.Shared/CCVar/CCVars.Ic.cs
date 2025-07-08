@@ -13,19 +13,19 @@ public sealed partial class CCVars
     ///     Restricts IC character names to alphanumeric chars.
     /// </summary>
     public static readonly CVarDef<bool> RestrictedNames =
-        CVarDef.Create("ic.restricted_names", true, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("ic.restricted_names", false, CVar.SERVER | CVar.REPLICATED); /// Ratbites, the new character freedom is here.
 
     /// <summary>
     ///     Allows flavor text (character descriptions)
     /// </summary>
     public static readonly CVarDef<bool> FlavorText =
-        CVarDef.Create("ic.flavor_text", false, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("ic.flavor_text", true, CVar.SERVER | CVar.REPLICATED); /// Ratbites, the new character freedom is here.
 
     /// <summary>
     ///     Adds a period at the end of a sentence if the sentence ends in a letter.
     /// </summary>
     public static readonly CVarDef<bool> ChatPunctuation =
-        CVarDef.Create("ic.punctuation", false, CVar.SERVER);
+        CVarDef.Create("ic.punctuation", true, CVar.SERVER); ///Ratbites, ease of life.
 
     /// <summary>
     ///     Enables automatically forcing IC name rules. Uppercases the first letter of the first and last words of the name
@@ -63,5 +63,5 @@ public sealed partial class CCVars
     ///     Won't work without ICSSDSleep
     /// </summary>
     public static readonly CVarDef<float> ICSSDSleepTime =
-        CVarDef.Create("ic.ssd_sleep_time", 600f, CVar.SERVER);
+        CVarDef.Create("ic.ssd_sleep_time", 120f, CVar.SERVER); ///Ratbites, sleepy.
 }

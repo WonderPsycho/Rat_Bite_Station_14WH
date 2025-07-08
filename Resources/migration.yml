@@ -750,8 +750,9 @@ CentcomPDAFake: null
 CentcomIDCardSyndie: null
 
 # 2024-09-06
-AntimovCircuitBoard: null
-OverlordCircuitBoard: null
+#AntimovCircuitBoard: null
+#OverlordCircuitBoard: null
+#Ratbite ^cringe^
 
 # 2024-09-08
 HatBase: null
@@ -978,3 +979,11 @@ PlushieBlackburnKobliska: null
 
 # 2025-06-13 Goobstation
 BroomWitch: Broomstick
+
+#2025 independence day Ratbite removals
+VehicleATV: null
+VehicleSecway: null
+VehicleJanicart: null
+VehicleKeyATV: null
+VehicleKeySecway: null
+VehicleKeyJanicart: null

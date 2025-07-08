@@ -29,6 +29,12 @@
     sprite: _Goobstation/Clothing/OuterClothing/Suits/hev.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.7
+  - type: PressureProtection #Ratbite
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection #Ratbite
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.5
   - type: Armor
     modifiers:
       coefficients:

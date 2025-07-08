@@ -113,9 +113,9 @@
     - MindRoleGhostRoleFreeAgent
     raffle:
       settings: default
-    requirements: # Goobstation - ghost roles requirements
-    - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+   #Ratbite  requirements: # Goobstation - ghost roles requirements
+   #Ratbite - !type:OverallPlaytimeRequirement
+   #Ratbite   time: 18000 #5 hours
   - type: GhostRoleMobSpawner
     prototype: MobRatKing
   - type: Sprite
@@ -204,10 +204,10 @@
     rules: ghost-role-information-loneop-rules
     mindRoles:
     - MindRoleGhostRoleSoloAntagonist
-    requirements: # Goobstation - ghost roles requirements
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 18000 #5 hours
+  #Ratbite  requirements: # Goobstation - ghost roles requirements
+  #Ratbite  - !type:DepartmentTimeRequirement
+  #Ratbite    department: Security
+  #Ratbite    time: 18000 #5 hours
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -262,9 +262,9 @@
     rules: ghost-role-information-space-dragon-rules
     mindRoles:
     - MindRoleGhostRoleTeamAntagonist
-    requirements: # Goobstation - ghost roles requirements
-    - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+   #Ratbite requirements: # Goobstation - ghost roles requirements
+  #Ratbite  - !type:OverallPlaytimeRequirement
+  #Ratbite    time: 18000 #5 hours
   - type: Sprite
     layers:
     - state: green
@@ -284,9 +284,9 @@
     - MindRoleGhostRoleSoloAntagonist
     raffle:
       settings: default
-    requirements: # Goobstation - ghost roles requirements
-    - !type:OverallPlaytimeRequirement
-      time: 18000 #5 hours
+ #Ratbite   requirements: # Goobstation - ghost roles requirements
+  #Ratbite  - !type:OverallPlaytimeRequirement
+  #Ratbite    time: 18000 #5 hours
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -327,10 +327,10 @@
     - MindRoleGhostRoleSilicon
     raffle:
       settings: default
-    requirements: # Goobstation - ghost roles requirements
-    - !type:RoleTimeRequirement
-      role: JobBorg
-      time: 3600 #1 hour
+ #Ratbite   requirements: # Goobstation - ghost roles requirements
+  #Ratbite  - !type:RoleTimeRequirement
+  #Ratbite    role: JobBorg
+  #Ratbite    time: 3600 #1 hour
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:

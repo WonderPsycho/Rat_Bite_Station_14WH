@@ -41,5 +41,5 @@ public sealed partial class CCVars
     ///     The chance for Tippy to replace a normal tip message.
     /// </summary>
     public static readonly CVarDef<float> TipsTippyChance =
-        CVarDef.Create("tips.tippy_chance", 0.01f);
+        CVarDef.Create("tips.tippy_chance", 0.1f); /// Ratbites, Tippy is based, you cant convince me otherwise.
 }

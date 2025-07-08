@@ -79757,13 +79757,6 @@ entities:
     - type: Transform
       pos: -18.5,28.5
       parent: 2
-- proto: PosterLegitKSLeaders
-  entities:
-  - uid: 10779
-    components:
-    - type: Transform
-      pos: -49.5,16.5
-      parent: 2
 - proto: PosterLegitLoveIan
   entities:
   - uid: 10780

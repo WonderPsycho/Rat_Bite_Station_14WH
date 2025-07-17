@@ -50,7 +50,6 @@
     flavors:
     - meaty
     - sadness
-  - scale: 2.3
   - type: Devourer
     foodPreference: Humanoid
     shouldStoreDevoured: true
@@ -63,3 +62,4 @@
       - Item
       tags:
       - Wall
+  - scale: 2.3

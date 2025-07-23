@@ -32,9 +32,9 @@
 - type: gameMap
   id: Saltern
   mapName: 'Saltern'
-  mapPath: /Maps/_Goobstation/saltern.yml # Goobstation - use custom saltern
-  minPlayers: 0
-  maxPlayers: 35
+  mapPath: /Maps/_BRatbite/Ratbite_Supported/saltern.yml
+  minPlayers: 10
+  maxPlayers: 45
   fallback: true
   stations:
     Saltern:
@@ -80,6 +80,7 @@
             Borg: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
+            RedsightOverseer: [ 1, 1 ] #Ratbite
             Warden: [ 1, 1 ]
             Detective: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
@@ -94,6 +95,7 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
+            Prisoner: [ -1, -1 ] #Ratbite
 
         # Goobstation blob-config-start SMALL+
         - type: StationBlobConfig

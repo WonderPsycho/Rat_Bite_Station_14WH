@@ -72,6 +72,7 @@
   - PermaBrig SOP
   - Punishments SOP
   - Searches SOP
+  - Multi Round Perma SOP #Ratbite
 
 # Jobs Main Directory and Subdirectories
 - type: guideEntry
@@ -86,6 +87,7 @@
   - Science SOP
   - Security SOP
   - Service SOP
+  - Central Command SOP #Ratbite
 
 - type: guideEntry
   id: Cargo SOP
@@ -100,8 +102,8 @@
   name: guide-entry-sop-command
   text: "/ServerInfo/_Goobstation/Guidebook/SoP/Jobs/Command/CommandSOP.xml"
   children:
-  - NanotrasenRep SOP
-  - BlueshieldOfficer SOP
+  # - NanotrasenRep SOP - Ratbite
+  # - BlueshieldOfficer SOP - Ratbite
   - Captain SOP
   - HeadOfPersonnel SOP
   - HeadOfSecurity SOP

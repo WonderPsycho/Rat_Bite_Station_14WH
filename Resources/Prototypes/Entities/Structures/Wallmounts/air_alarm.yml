@@ -89,6 +89,9 @@
       - AirAlarm
   - type: AtmosDevice
   - type: AirAlarm
+    channels:
+    - Security
+    - Engineering
   - type: AtmosAlertsDevice
     group: AirAlarm
   - type: Clickable

@@ -37,7 +37,7 @@
 - type: gameMap
   id: FlandHighPop
   mapName: 'Fland Installation'
-  mapPath: /Maps/_Goobstation/fland.yml
+  mapPath: /Maps/_BRatbite/Ratbite_Supported/Fland.yml
   minPlayers: 85
   stations:
     Fland:
@@ -83,6 +83,7 @@
             ResearchAssistant: [ -1, -1 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
+            RedsightOverseer: [ 1, 1 ] #Ratbite
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 8, 8 ]
             Detective: [ 1, 1 ]

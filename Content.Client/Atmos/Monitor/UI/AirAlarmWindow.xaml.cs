@@ -188,6 +188,7 @@ public sealed partial class AirAlarmWindow : FancyWindow
                 if (!_pumps.TryGetValue(addr, out var pumpControl))
                 {
                     var control= new PumpControl(pump, addr);
+                    control.OnThresholdUpdate += AtmosAlarmThresholdChanged;
                     control.PumpDataChanged += AtmosDeviceDataChanged;
                     control.PumpDataCopied += AtmosDeviceDataCopied;
                     _pumps.Add(addr, control);

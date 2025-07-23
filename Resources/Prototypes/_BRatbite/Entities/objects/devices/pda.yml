@@ -1,0 +1,27 @@
+- type: entity
+  parent: BaseSecurityPDA
+  id: RSOPDA
+  name: redsight overseer PDA
+  description: Whosoever bears this PDA is the law, squared.
+  components:
+  - type: Pda
+    id: RedsightOverseerIDcard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-hos
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentHColor: "#447987"
+  - type: Icon
+    state: pda-hos
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - WantedListCartridge
+    - LogProbeCartridge
+    - NanoChatCartridge # DeltaV

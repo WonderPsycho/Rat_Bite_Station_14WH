@@ -28,9 +28,9 @@
 - type: gameMap
   id: Core
   mapName: 'Core'
-  mapPath: /Maps/_Goobstation/core.yml # Goobstation
-  minPlayers: 35
-  maxPlayers: 70
+  mapPath: /Maps/_BRatbite/Ratbite_Supported/core.yml # Ratbite
+  minPlayers: 50
+  maxPlayers: 80
   stations:
     Core:
       stationProto: StandardNanotrasenStation
@@ -75,6 +75,7 @@
             ResearchAssistant: [ 1, 1 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
+            RedsightOverseer: [ 1, 1 ] #Ratbite
             SecurityOfficer: [ 4, 4 ]
             Warden: [ 1, 1 ]
             Lawyer: [ 1, 1 ]

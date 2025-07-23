@@ -1,0 +1,17 @@
+- type: entity
+  parent: IDCardStandard
+  id: RedsightOverseerIDcard
+  name: Redsight Overseer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: idcentcom
+  - type: Item
+    heldPrefix:
+  - type: PresetIdCard
+    job: RedsightOverseer
+  - type: Access
+    tags:
+    - CentralCommand
+    - RedsightOverseer

@@ -1993,6 +1993,7 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
+    allowPerma: true
     name: ghost-role-information-mouse-name
     description: ghost-role-information-mouse-description
     rules: ghost-role-information-freeagent-rules
